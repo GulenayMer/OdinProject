@@ -1,0 +1,79 @@
+body {
+  font-family: 'Caladea', serif;
+  background-color:  #ececec;
+  text-align: center;    /* in order to center texts, labels and inputs are inklusive */
+  margin: 60px auto;   /* auto left and right to center whole body*/
+  padding-bottom: 50px;
+  
+}
+
+.container {
+  background-color: #fcfcfc;
+  border: 1px solid #8a8a8a;
+  padding: 20px;  /* need padding btw border and the content inside of it */
+
+  /* Setting the width of a block-level element will prevent it from stretching out to
+   the edges of its container.
+   Then, you can set the margins to auto, to horizontally center the element within
+    its container:  */
+  width: 80%;
+  max-width: 400px; 
+   margin: auto;  
+   
+} 
+
+button {
+    padding: 10px 80px;  /* top-bottom and left-right */
+    background-color: #1f23fa;
+    color: white;
+    font-size: 15px;
+    border: none;   /* no additional borders */
+    border-radius: 8px;
+  }
+
+/* with margin trying to put space btw inputs */
+  .email, .phone, .pass {
+     margin: 20px 0;
+  
+  }
+
+  /* Here with display block trying to center the labels */
+  label {
+    display: block;
+    margin: 5px;
+ 
+  }
+
+
+input {
+  padding: 5px 60px;
+  width: 50%;
+  border: 0.5px solid #252525;
+  border-radius: 4px;
+}
+
+.second_text {
+  padding-left: 20px;
+}
+
+
+/* here footer comes to bottom: */
+#footer {
+  position:relative;
+  bottom:0;
+  width:90%;
+  height:100px; 
+  margin-top: 40px;
+  
+}
+
+#footer a {
+  color: #3b3a3a;
+  padding: 14px 16px;
+  text-decoration: none;  /*not underlined*/
+} 
+
+ /* Change the color of links on hover */
+ #footer a:hover {
+  color: black;
+    }

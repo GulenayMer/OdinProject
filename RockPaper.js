@@ -25,6 +25,8 @@ computerPlay();
 
 // So I use my variables which contain answers as parameters in the playRound function
 
+for (let round = 0; round < 5; round++) {
+   
 const computerSelection = computerPlay();
 const playerSelection = prompt("Rock, Paper or Scissors?");
 
@@ -66,6 +68,10 @@ function playRound (playerSelection, computerSelection){
 
 console.log(playRound(playerSelection, computerSelection));
 
+};
+
+//console.log(playRound(playerSelection, computerSelection));
+
 
 
 //--------------------------------------------------STEP 3---------------------------------------------//
@@ -73,13 +79,10 @@ console.log(playRound(playerSelection, computerSelection));
 // I will write a new function
 
 
-for (i = 0; i <= 5; i++){
-function game(playRound) {
-    console.log(playRound(playerSelection, computerSelection));
- };
- };
 
-      
+
+
+
 
 
 

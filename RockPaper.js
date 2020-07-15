@@ -24,20 +24,47 @@ computerPlay();
 // I need to do the function case insensitive 
 
 // So I use my variables which contain answers as parameters in the playRound function
-const playerSelection = "Rock";
-const computerSelection = computerPlay();
 
-// if (playerSelection.toLowerCase() == "rock"){}
+const computerSelection = computerPlay();
+const playerSelection = prompt("Rock, Paper or Scissors?");
+
+//........................Lets see the possible conditions and outcomes
 
 function playRound (playerSelection, computerSelection){
+    if (computerSelection === "Rock" && playerSelection === "Scissors"){
+        return "You Lose! Rock beats Scissors"; 
+    
+    } else if (computerSelection === "Rock" && playerSelection === "Paper") {
+        return "You Win! Paper beats Rock";
+    
+    } else if (computerSelection === "Rock" && playerSelection === "Rock") {
+        return "Nobody wins";
+    
+    } else if (computerSelection === "Paper" && playerSelection === "Scissors") {
+        return "You win! Scissors beats Paper";
+    
+    } else if (computerSelection === "Paper" && playerSelection === "Rock") {
         return "You Lose! Paper beats Rock";
     
+    } else if (computerSelection === "Paper" && playerSelection === "Paper") {
+        return "Nobody wins";
     
+    } else if (computerSelection === "Scissors" && playerSelection === "Rock") {
+        return "You win! Rock beats Scissors";
+    
+    } else if (computerSelection === "Scissors" && playerSelection === "Paper") {
+        return "You Lose! Scissors beats Paper";
+    
+    } else if (computerSelection === "Scissors" && playerSelection === "Scissors") {
+        return "Nobody wins";
+    } else {
+        return "Play is over!";
+    };
+    
+             
 };
 
-
 console.log(playRound(playerSelection, computerSelection));
-
 
 
 
@@ -45,14 +72,17 @@ console.log(playRound(playerSelection, computerSelection));
 // 5 rounds play -- the game keeps score and reports a winner or looser
 // I will write a new function
 
-for (i = 0; i <= 5; i++){
-    function game() {
-        function playRound (playerSelection, computerSelection){
-            return "You Lose! Paper beats Rock";
-        };
 
-    }  
-};
+for (i = 0; i <= 5; i++){
+function game(playRound) {
+    console.log(playRound(playerSelection, computerSelection));
+ };
+ };
+
+      
+
+
+
 
 
 
